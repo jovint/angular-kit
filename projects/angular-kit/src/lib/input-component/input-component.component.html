@@ -1,0 +1,7 @@
+<label *ngIf="field.label" [for]="field.id ? field.id : ''">{{field.label}}</label>
+<div [class]="'input-group '+ field.classes" [formGroup]="group">
+  <div *ngIf="field.prepend" class="input-group-prepend">
+    <span class="input-group-text" [id]="field.id ? field.id : ''">{{field.prepend}}</span>
+  </div>
+  <input [type]="field.inputType" [formControlName]="field.name" class="form-control" [placeholder]="field.placeholder ? field.placeholder : ''">
+</div>
