@@ -8,8 +8,9 @@ export interface Props {
   name?: string;
   options?: string[];
   type: string;
-  inputType: string;
-  classes: string;
+  inputType?: string;
+  classes?: string;
   value?: any;
+  valid?: boolean;
   validations?: Validator[];
 }

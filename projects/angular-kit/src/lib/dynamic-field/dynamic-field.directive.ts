@@ -8,19 +8,17 @@ import {
 import { FormGroup } from '@angular/forms';
 import { Props } from '../utils/props.interface';
 import { InputComponent } from '../input-component/input-component.component';
-// import { ButtonComponent } from '../button/button.component';
-// import { SelectComponent } from '../select/select.component';
-// import { DateComponent } from '../date/date.component';
-// import { RadiobuttonComponent } from '../radiobutton/radiobutton.component';
-// import { CheckboxComponent } from '../checkbox/checkbox.component';
+import { ButtonComponent } from '../button/button.component';
+import { SelectComponent } from '../select/select.component';
+import { RadiobuttonComponent } from '../radiobutton/radiobutton.component';
+import { CheckboxComponent } from '../checkbox/checkbox.component';
 
 const componentMapper = {
   input: InputComponent,
-  // button: ButtonComponent,
-  // select: SelectComponent,
-  // date: DateComponent,
-  // radiobutton: RadiobuttonComponent,
-  // checkbox: CheckboxComponent
+  button: ButtonComponent,
+  select: SelectComponent,
+  radiobutton: RadiobuttonComponent,
+  checkbox: CheckboxComponent
 };
 @Directive({
   selector: '[dynamicField]'

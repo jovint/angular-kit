@@ -6,13 +6,21 @@ import { AngularKitService } from './angular-kit.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DynamicFormComponent } from './form/form.component';
 import { DynamicFieldDirective } from './dynamic-field/dynamic-field.directive';
+import { RadiobuttonComponent } from './radiobutton/radiobutton.component';
+import { ButtonComponent } from './button/button.component';
+import { SelectComponent } from './select/select.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, ReactiveFormsModule
   ],
-  declarations: [AngularKitComponent, DynamicFieldDirective, DynamicFormComponent, InputComponent],
-  exports: [DynamicFieldDirective, DynamicFormComponent, InputComponent],
+  declarations: [AngularKitComponent, ButtonComponent,
+     SelectComponent, DynamicFieldDirective, CheckboxComponent,
+     DynamicFormComponent, InputComponent, RadiobuttonComponent],
+  exports: [DynamicFieldDirective, SelectComponent, ButtonComponent,
+     DynamicFormComponent, InputComponent, RadiobuttonComponent, CheckboxComponent],
   providers: [AngularKitService],
-  entryComponents: [InputComponent]
+  entryComponents: [InputComponent, CheckboxComponent,
+     RadiobuttonComponent, ButtonComponent, SelectComponent]
 })
 export class AngularKit { }

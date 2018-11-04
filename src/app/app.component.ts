@@ -7,6 +7,9 @@ import { Validators } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  submit(value: any) {
+    debugger;
+  }
   title = 'angular-ui-kit';
   regConfig: Props[] = [
     {
@@ -15,6 +18,7 @@ export class AppComponent {
       inputType: 'text',
       classes: '',
       name: 'name',
+      valid: false,
       validations: [
         {
           name: 'required',
@@ -27,6 +31,14 @@ export class AppComponent {
           message: 'Accept only text'
         }
       ]
+    }
+    ,
+    {
+      type: "select",
+      label: "Country",
+      name: "country",
+      value: "UK",
+      options: ["India", "UAE", "UK", "US"]
     },
     {
       type: 'input',
@@ -48,6 +60,18 @@ export class AppComponent {
           message: 'Invalid email'
         }
       ]
+    },
+    {
+      type: "radiobutton",
+      label: "Gender",
+      name: "gender",
+      options: ["Male", "Female"],
+      value: "Male"
+    },
+    {
+      type: "button",
+      label: "Save",
+      classes:'btn-primary'
     },
     {
       type: 'input',
