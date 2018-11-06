@@ -5,6 +5,7 @@ export interface Validator {
 }
 export interface Props {
   label?: string;
+  prepend?: string;
   name?: string;
   options?: string[];
   type: string;

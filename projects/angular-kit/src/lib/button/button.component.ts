@@ -5,7 +5,7 @@ import { Props } from '../utils/props.interface';
   selector: 'app-button',
   template: `
 <div class='form-group' [formGroup]='group'>
-  <button type='submit' [class]="'btn '+ field.classes">{{field.label}}</button>
+  <button type='submit' error-a [class]="'btn '+ field.classes">{{field.label}}</button>
 </div>
 `,
   styles: []

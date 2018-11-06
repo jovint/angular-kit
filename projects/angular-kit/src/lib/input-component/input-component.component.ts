@@ -14,7 +14,7 @@ import { Props } from '../utils/props.interface';
       [formControlName]="field.name" class="form-control"
       [class.is-invalid]="invalid" [placeholder]="field.placeholder ? field.placeholder : ''">
     <ng-container *ngFor="let validation of field.validations;">
-      <div *ngIf="group.get(field.name).hasError(validation.name)" class="invalid-feedback">{{validation.message}}</div>
+      <div class="invalid-feedback">{{validation.message}}</div>
     </ng-container>
   </div>
 </div>`,

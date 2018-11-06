@@ -10,14 +10,15 @@ import { RadiobuttonComponent } from './radiobutton/radiobutton.component';
 import { ButtonComponent } from './button/button.component';
 import { SelectComponent } from './select/select.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { ErrorClassAppendDirective } from './utils/error.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, ReactiveFormsModule
   ],
-  declarations: [AngularKitComponent, ButtonComponent,
+  declarations: [AngularKitComponent, ButtonComponent, ErrorClassAppendDirective,
      SelectComponent, DynamicFieldDirective, CheckboxComponent,
      DynamicFormComponent, InputComponent, RadiobuttonComponent],
-  exports: [DynamicFieldDirective, SelectComponent, ButtonComponent,
+  exports: [DynamicFieldDirective, SelectComponent, ButtonComponent, ErrorClassAppendDirective,
      DynamicFormComponent, InputComponent, RadiobuttonComponent, CheckboxComponent],
   providers: [AngularKitService],
   entryComponents: [InputComponent, CheckboxComponent,
